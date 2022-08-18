@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+/* Body CSS */
+ body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ /* Header CSS */
+header {
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)) , url(header_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAV CSS */
+nav ul{
+    margin: auto;
+    text-align: center;
+    height: 5rem;
+    /* margin-left: 4rem; */
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0.8em 2.5em;
+    font-size: large;
+    font-weight: 900;
+    padding: 0.3rem;
+
+}
+
+nav li:hover{
+    border-bottom: 3px solid rgb(26,55,34);
+}
+
+nav a{
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: rgb(24, 80, 53);
+}
+
+.fa-address-card, .fa-house{
+    font-size: 1.8rem;
+    margin-right: 0.15em;
+}
+.fa-envelope{
+    font-size: 1.9rem;
+    margin-right: 0.15em;
+}
+
+/* Header div CSS */
+header div{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+#chibby{
+    width: 25rem;
+    border-radius: 2rem;
+}
+
+div.travel{
+    font-size: 1.6rem;
+    margin: 1em auto 0.2em auto;
+    background-color: rgb(39, 135, 88);
+    width: 50rem;
+    border-radius: 5rem;
+    color: rgb(230, 225, 219);
+    border: 0.3rem solid rgb(177,233,190);
+}
+
+div.travel h1{
+    padding-top: 0.3rem;
+    margin: 0;
+}
+
+div.travel p{
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    margin-bottom: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn_1{
+    background-color: rgb(39, 135, 88);
+    color: rgb(230, 225, 219);
+    font-weight: bold;
+    font-size: medium;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: 20rem;
+}
+
+.btn_1:hover{
+    background-color: rgb(165,230,181);
+    color: rgb(39, 135, 88);
+}
+
+header div img{
+    width: 30px;
+}
+
+
+/* Content CSS */
+
+#content{
+    padding: 8rem 20rem;
+    background-color: rgb(189, 230, 199) ;
+}
+
+.place_1,.place_2, .place_3{
+    border: 0.6rem solid rgb(39, 135, 88);
+    border-radius: 2.5rem;
+    height: 30rem;
+}
+
+.place_1, .place_2{
+    margin-bottom: 5rem;
+}
+
+.place_1, .place_2, .place_3{
+    box-shadow: 0.5rem 0.5rem 2rem 0.2rem rgba(39, 135, 89, 0.813);
+}
+
+.place_1::after, .place_2::after, .place_3::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.place_1 #maldives, .place_2 #keral, .place_3 #shimla{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.place_1 #maldiv, .place_2 #kerala, .place_3 #shiml{
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+#maldives, #kerala, #shimla{
+    border-radius: 1.8rem;
+}
+
+#maldiv, #keral, #shiml{
+    background-color: rgb(146, 228, 167);
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    padding: 3rem 3rem;
+    text-align: center;
+}
+
+#maldiv p, #keral p, #shiml p{
+    margin-top: 0.8rem;
+}
+
+#maldiv h2, #keral h2, #shiml h2{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;;
+}
+
+
+.btn_2{
+    margin-top: 1.2rem;
+    background-color: rgb(39, 135, 88);
+    color: rgb(230, 225, 219);
+    font-weight: bold;
+    font-size: medium;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem;
+    width: 30rem;
+}
+
+.btn_2:hover{
+    background-color: rgb(230, 250, 235);
+    border: 0.3rem solid rgb(29, 101, 66);
+    color: rgb(39, 135, 88);
+}
+
+/* Adventure CSS */
+
+/* #adv{
+    background-color: aqua;
+    padding: 5rem 20rem;
+} */
+
+/* #adventure{
+    border: 3px solid red;
+    height: 20rem;
+} */
+
+/* .adv_1, .adv_2{
+    width: 33%;
+    height: 100%;
+    border: 0.5rem solid blue;
+} */
