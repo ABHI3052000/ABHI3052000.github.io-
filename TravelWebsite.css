@@ -197,24 +197,64 @@ header div img{
 
 .btn_2:hover{
     background-color: rgb(230, 250, 235);
-    border: 0.3rem solid rgb(29, 101, 66);
+    border: 0.3rem solid rgb(39, 135, 88);
     color: rgb(39, 135, 88);
 }
 
 /* Adventure CSS */
 
-/* #adv{
-    background-color: aqua;
-    padding: 5rem 20rem;
-} */
+#adv{
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: rgb(58, 142, 103);
+    padding: 5rem 15rem;
+}
 
-/* #adventure{
-    border: 3px solid red;
+#adv h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.adventure{
+    border: 0.6rem solid rgb(146, 228, 167);
+    border-radius: 2.5rem;
     height: 20rem;
-} */
+}
+.adventure::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 
-/* .adv_1, .adv_2{
-    width: 33%;
+.activities{
+    color: rgb(181, 251, 198);
+    margin-top: 2rem;
+    margin-bottom: 4.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#adv_1, #adv_2, #adv_3, #adv_4{
+    text-align: center;
+    float: left;
+    width: 25%;
     height: 100%;
-    border: 0.5rem solid blue;
-} */
+}
+
+.adventure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+#guide{
+    margin-top: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+.fa-circle-info{
+    margin-right: 0.3rem;
+}
