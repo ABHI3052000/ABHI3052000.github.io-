@@ -11,26 +11,44 @@ html{
     font-size: 62.5%;
 }
 
-/* Body CSS */
+/* ################################ Body CSS ################################ */
  body{
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
  }
 
- /* Header CSS */
+ /* ################################ Header CSS ################################ */
 header {
     height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0,0,0,0.05 )) , url(header_image_1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05),rgba(0,0,0,0.05 )) , url(../Images/header_image_1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* NAV CSS */
+/* ################################ NAV CSS ################################ */
+#nav{
+    padding-top: 1.5rem;
+}
+#chibby{
+    width: 20rem;
+    height: 5rem;
+    border-radius: 2rem;
+    float: left;
+    margin-left: 3rem;
+}
+
 nav ul{
     margin-top: 0;
     text-align: center;
     height: 5rem;
+    float: right;
+}
+
+#nav::after{
+    content: '';
+    display: block;
+    clear: both;
 }
 
 nav ul li{
@@ -38,29 +56,24 @@ nav ul li{
     display: inline-block;
     margin: 0.8em 2em;
     font-size: large;
-    font-weight: 900;
+    font-weight: 700;
     padding: 0.3rem;
-
 }
 
-nav li:hover{
-    border-bottom: 3px solid rgb(26,55,34);
-}
+/* nav li:hover{
+    border-bottom: 0.15rem solid rgb(0, 0, 0);
+} */
 
 nav a{
     font-family: 'Josefin Sans', sans-serif;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 nav a:hover{
     text-decoration: none;
-    color:  rgb(66, 150, 99);
-}
-
-#chibby{
-    width: 25rem;
-    border-radius: 2rem;
+    color:  rgb(0, 0, 0);
+    
 }
 
 .fa-address-card, .fa-house{
@@ -72,20 +85,21 @@ nav a:hover{
     margin-right: 0.15em;
 }
 
+
 /* Header div CSS */
 header div{
     text-align: center;
-    margin-top: 18rem;
+    margin-top: 25rem;
 }
 
 div.travel{
     font-size: 1.6rem;
     margin: 1em auto 0.2em auto;
-    background-color: rgb(39, 135, 88);
+    background-color: rgba(39, 135, 89, 0.6);
     width: 50rem;
     border-radius: 5rem;
     color: rgb(255, 255, 255);
-    border: 0.3rem solid rgba(128,248,174,1);
+    /* border: 0.3rem solid rgba(128,248,174,1); */
 }
 
 div.travel h1{
@@ -101,7 +115,7 @@ div.travel p{
 }
 
 .btn_1{
-    background-color: rgb(39, 135, 88);
+    background-color: rgba(39, 135, 89, 0.5);
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: medium;
@@ -123,7 +137,7 @@ header div img{
 }
 
 
-/* Content CSS */
+/* ################################  Places CSS ################################  */
 
 #content{
     padding: 8rem 20rem;
@@ -182,7 +196,7 @@ header div img{
 #maldiv h2, #keral h2, #shiml h2{
     font-size: x-large;
     font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -204,13 +218,13 @@ header div img{
     color: rgb(255, 255, 255);
 }
 
-/* Adventure CSS */
+/* ################################  Adventure CSS ################################  */
 
 #adv{
     font-size: 1.6rem;
     text-align: center;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
-    padding: 5rem 15rem;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,0.8) 0%, rgba(12,116,117,0.8) 90% );
+    padding: 5rem 10rem;
 }
 
 #adv h1{
@@ -222,9 +236,10 @@ header div img{
 }
 
 .adventure{
-    border: 0.6rem solid rgb(146, 228, 167);
+    background-color: rgb(118, 234, 147);
+    border: 0.6rem solid rgb(118, 234, 147);
     border-radius: 2.5rem;
-    height: 20rem;
+    height: 25rem;
 }
 .adventure::after{
     content: '';
@@ -233,18 +248,18 @@ header div img{
 }
 
 .activities{
-    color: rgb(181, 251, 198);
+    color: rgb(144, 239, 168);
     margin-top: 2rem;
     font-family: 'Josefin Sans', sans-serif;
     height: 3rem;
 }
 
 #adv_1, #adv_2, #adv_3, #adv_4{
+    padding: 0.4rem;
     text-align: center;
     float: left;
     width: 25%;
     height: 100%;
-
 }
 
 #adv div div{
@@ -258,7 +273,7 @@ header div img{
 }
 
 #guide{
-    margin-top: 1rem;
+    margin-top: 0.625em;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
@@ -268,10 +283,13 @@ header div img{
 }
 
 
-/* Footer CSS */
+/* ################################  Footer CSS ################################  */
 
 #footer{
-    background-color: #32CCBC;
+    /* background-color: #32cc9bca; */
+    background: #dce35b; 
+    background: -webkit-linear-gradient(to top, #dce35b, #45b649);
+    background: linear-gradient(to top, #dce35bbe, #45b649e0);
     height: 15rem;
     text-align: center;
     padding-top: 2rem;
@@ -283,7 +301,7 @@ header div img{
 
 .fa-brands{
     font-size: 4rem;
-    margin: 1rem 1.5rem;
+    margin: 0.25em 0.375em;
 }
 
 .instagram{

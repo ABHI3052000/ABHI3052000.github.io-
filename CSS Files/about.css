@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300&family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* ################################ Body CSS ################################ */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+ }
+
+
+
+ /*################################ NAV CSS ################################ */
+
+header{
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+    height: 100vh;
+}
+
+#nav{
+    padding-top: 1.5rem;
+}
+#chibby{
+    width: 20rem;
+    height: 5rem;
+    border-radius: 2rem;
+    float: left;
+    margin-left: 3rem;
+}
+
+nav ul{
+    font-family: 'Josefin Sans', sans-serif;;;
+    text-align: center;
+    height: 5rem;
+    float: right;
+    margin-right: 1.6rem;
+}
+
+#nav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0.8em 2em;
+    font-size: large;
+    font-weight: 700;
+    padding: 0.3rem;
+}
+
+/* nav li:hover{
+    border-bottom: 0.15rem solid rgb(255, 255, 255);
+} */
+
+nav a{
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover{
+    text-decoration: none;
+    color:  rgb(255, 255, 255);
+    
+}
+
+.fa-address-card, .fa-house{
+    font-size: 1.8rem;
+    margin-right: 0.15em;
+}
+.fa-envelope{
+    font-size: 1.9rem;
+    margin-right: 0.15em;
+}
+
+ /*################################ Header --> About CSS ################################ */
+
+ #about{
+    font-size: 1.6rem;
+    margin: 9rem 25rem;
+ }
+
+ #about h2{
+    margin-bottom: 1.5rem;
+    border-bottom: 1rem solid rgba(39, 135, 89);
+    
+ }
