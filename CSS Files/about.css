@@ -96,5 +96,8 @@ nav a:hover{
  #about h2{
     margin-bottom: 1.5rem;
     border-bottom: 1rem solid rgba(39, 135, 89);
+ }
+
+ #about p{
     
  }
