@@ -15,6 +15,7 @@ html{
  body{
     font-family: 'Josefin Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    /* width: 210vh; */
  }
 
  /* ################################ Header CSS ################################ */
@@ -155,7 +156,7 @@ header div img{
 }
 
 .place_1, .place_2, .place_3{
-    box-shadow: 0.5rem 0.5rem 2rem 0.2rem rgba(39, 135, 89, 0.813);
+    box-shadow: 0.5rem 0.5rem 2rem rgb(39, 135, 89);
 }
 
 .place_1::after, .place_2::after, .place_3::after{
@@ -263,7 +264,7 @@ header div img{
 }
 
 #adv div div{
-    box-shadow: 0.5rem 0.5rem 2rem 0.3rem rgba(146, 228, 166, 0.795);
+    box-shadow: 0.5rem 0.5rem 2rem rgba(146, 228, 166, 0.897);
 }
 
 .adventure img{
