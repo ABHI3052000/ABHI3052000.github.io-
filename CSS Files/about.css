@@ -90,7 +90,7 @@ nav a:hover{
 
  #about{
     font-size: 1.6rem;
-    margin: 7rem 25rem;
+    margin: 5rem 25rem;
  }
 
  #about h2{
@@ -110,7 +110,7 @@ nav a:hover{
 
 #about_contact{
     border: 0.3rem solid black;
-    padding: 1.5rem 8.5rem;
+    padding: 1.5rem 7.5rem;
     box-shadow: 0.5rem 0.5rem 1rem rgba(255, 255, 255, 0.553);
 
     /* height: 5rem; */
