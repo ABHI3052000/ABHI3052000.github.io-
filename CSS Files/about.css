@@ -86,8 +86,7 @@ nav a:hover{
     margin-right: 0.15em;
 }
 
- /*################################ Header --> About CSS ################################ */
-
+/*################################ Header --> About CSS ################################ */
  #about{
     font-size: 1.6rem;
     margin: 5rem 25rem;
@@ -193,4 +192,63 @@ nav a:hover{
 }
 .youtube{
     color: #FF0000;
+}
+
+
+/* ################################  Responsiveness CSS (Media Queries) ################################  */
+@media (max-width:500px){
+    html{
+        font-size: 8px;
+    }
+    
+    /* ################################ NAV CSS ################################ */
+    #chibby, nav ul{
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.8em 0.3em;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    /*################################ Header --> About CSS ################################ */
+    #about{
+        font-size: 1.6rem;
+        margin: 5rem 3rem;
+        /* text-align: center; */
+    }
+
+    #about_contact{
+        padding: 0.5rem 2rem;
+        text-align: center;
+    }
+
+    #about_contact p, #about_contact a{
+        float: none;
+        display: block;
+    }
+    
+    #about_contact a{
+        margin: 0.5em 0;
+        padding: 0 0;
+    }
+
+    .hand_icon{
+        display: none;
+    }
+
+    /* ################################  Footer CSS ################################  */
+    #footer{
+        height: auto;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+    }
+    #copyright{
+        padding-bottom: 1em;
+    }
 }

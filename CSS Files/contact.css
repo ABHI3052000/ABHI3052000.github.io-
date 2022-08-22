@@ -84,7 +84,7 @@ nav a:hover{
     margin-right: 0.15em;
 }
 
- /*################################ Header --> Contact CSS ################################ */
+/*################################ Header --> Contact CSS ################################ */
 
  #contact{
     font-size: 1.6rem;
@@ -136,7 +136,6 @@ nav a:hover{
     width: 50%;
     float: right;
     padding: 1rem 2rem;
-    text-align: left;
  }
 
  #feedback h2{
@@ -148,13 +147,12 @@ nav a:hover{
     font-weight: bold;
   }
 
-/* #feedback label::after{
-   content: '*';
-   color: white;
- }  
- */
+#feedback label::after{
+    content: '*';
+    color: red;
+}  
 
- #feedback input{
+#feedback input{
    margin-bottom: 1.6rem;
  }
 
@@ -169,16 +167,23 @@ nav a:hover{
     max-width: 100%;
     padding: 1rem;
  }
+
  #feedback button{
     font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
     font-weight: 900;
     font-size: large;
-    margin: 0.5rem 9rem;
     padding: 0.5rem 5rem;
+    margin-top: 0.1em;
+    width: 100%;
     border: none;
     border-radius: 0.3rem;
  }
 
+#feedback div{
+    width: 50%;
+    margin: auto;
+}
 
  #feedback button:hover{
     background-color: black;
@@ -218,4 +223,97 @@ nav a:hover{
 }
 .youtube{
     color: #FF0000;
+}
+
+
+/* ################################  Responsiveness CSS (Media Queries) ################################  */
+@media (max-width:500px){
+    html{
+        font-size: 8px;
+    }
+    
+    /* ################################ NAV CSS ################################ */
+    #chibby, nav ul{
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.8em 0.3em;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    /*################################ Header --> Contact CSS ################################ */
+    #section{
+        height: auto;
+    }
+    #contact{
+        margin: 5rem 3rem;
+        margin-bottom: 0;
+       
+    }
+    
+    /* #contact_ways{
+        text-align: center;
+    } */
+
+    #contact h2{
+        font-family: 'Josefin Sans', sans-serif;
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.8rem;
+        border-bottom: 0.6rem solid rgb(0, 0, 0);
+    }
+
+    #loc, #em, #ph{
+        margin-bottom: 0.8rem;
+    }
+
+    #feedback, #contact_ways{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    #feedback{
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    #feedback input{
+        margin-bottom: 1.6rem;
+    }
+
+    #user_name, #user_email, #user_phone,  #user_message{
+        width: 100%;
+     padding: 0.1rem;
+        /* background: none; */
+    }
+
+    #feedback textarea{
+        max-height: 10rem;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #feedback button{
+        font-size: small;
+        font-weight: bold;
+    }
+    #feedback div{
+        margin-bottom: 1em;
+    }
+
+    /* ################################  Footer CSS ################################  */
+    #footer{
+        height: auto;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+    }
+    #copyright{
+        padding-bottom: 1em;
+    }
 }
