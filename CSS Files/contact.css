@@ -154,6 +154,7 @@ nav a:hover{
 
 #feedback input{
    margin-bottom: 1.6rem;
+   opacity: 0.9;
  }
 
  #user_name, #user_email, #user_phone,  #user_message{
@@ -166,6 +167,7 @@ nav a:hover{
     max-height: 10rem;
     max-width: 100%;
     padding: 1rem;
+    opacity: 0.9;
  }
 
  #feedback button{
@@ -315,5 +317,193 @@ nav a:hover{
     }
     #copyright{
         padding-bottom: 1em;
+    }
+}
+
+@media (min-width:500px) and (max-width:768px){
+    html{
+        font-size: 9px;
+    }
+    
+    /* ################################ NAV CSS ################################ */
+    #chibby, nav ul{
+        /* float: none; */
+        display: block;
+        margin: auto;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.8em 0.3em;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    /*################################ Header --> Contact CSS ################################ */
+    #section{
+        height: auto;
+    }
+    #contact{
+        margin: 5rem 3rem;
+        margin-bottom: 0;
+       
+    }
+    
+    /* #contact_ways{
+        text-align: center;
+    } */
+
+    #contact h2{
+        font-family: 'Josefin Sans', sans-serif;
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.8rem;
+        border-bottom: 0.6rem solid rgb(0, 0, 0);
+    }
+
+    #loc, #em, #ph{
+        margin-bottom: 0.8rem;
+    }
+
+    #feedback, #contact_ways{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    #feedback{
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    #feedback input{
+        margin-bottom: 1.6rem;
+    }
+
+    #user_name, #user_email, #user_phone,  #user_message{
+        width: 100%;
+     padding: 0.1rem;
+        /* background: none; */
+    }
+
+    #feedback textarea{
+        max-height: 10rem;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #feedback button{
+        font-size: small;
+        font-weight: bold;
+    }
+    #feedback div{
+        margin-bottom: 1em;
+    }
+
+    /* ################################  Footer CSS ################################  */
+    #footer{
+        height: auto;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+    }
+    #copyright{
+        padding-bottom: 1em;
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px){
+    html{
+        font-size: 10px;
+    }
+    
+    /* ################################ NAV CSS ################################ */
+    #chibby, nav ul{
+        /* float: none; */
+        display: block;
+        margin: auto;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.8em 0.3em;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    /*################################ Header --> Contact CSS ################################ */
+    #section{
+        height: auto;
+    }
+    #contact{
+        margin: 5rem 3rem;
+        margin-bottom: 0;
+       
+    }
+    
+    /* #contact_ways{
+        text-align: center;
+    } */
+
+    #contact h2{
+        font-family: 'Josefin Sans', sans-serif;
+        padding-bottom: 0.3rem;
+        margin-bottom: 0.8rem;
+        border-bottom: 0.6rem solid rgb(0, 0, 0);
+    }
+
+    #loc, #em, #ph{
+        margin-bottom: 0.8rem;
+    }
+
+    #feedback, #contact_ways{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    #feedback{
+        padding: 0.5rem;
+        text-align: left;
+    }
+
+    #feedback input{
+        margin-bottom: 1.6rem;
+    }
+
+    #user_name, #user_email, #user_phone,  #user_message{
+        width: 100%;
+     padding: 0.1rem;
+        /* background: none; */
+    }
+
+    #feedback textarea{
+        max-height: 10rem;
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    #feedback button{
+        font-size: small;
+        font-weight: bold;
+    }
+    #feedback div{
+        margin-bottom: 1em;
+    }
+
+    /* ################################  Footer CSS ################################  */
+    #footer{
+        height: auto;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+    }
+    #copyright{
+        padding-bottom: 1em;
+    }
+}
+
+@media(orientation = landscape) and (max-height: 500px){
+    #section{
+        height: 140vmax;
     }
 }

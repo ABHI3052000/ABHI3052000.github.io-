@@ -257,9 +257,6 @@ header div img{
    margin: 0.3em 0;
 }
 
-#adv_3 img{
-    
-}
 .adventure img{
     width: 100%;
     height: 20rem;
@@ -330,7 +327,7 @@ header div img{
     nav ul li{
         list-style: none;
         display: inline-block;
-        margin: 0.8em 0.3em;
+        margin: 0.8em 0.5em;
         font-size: medium;
         font-weight: 700;
     }
@@ -338,7 +335,7 @@ header div img{
     /* ################################ Header div CSS ################################ */
     header div{
         text-align: center;
-        margin-top: 30rem;
+        margin-top: 40rem;
     }
     
     div.travel{
@@ -410,5 +407,210 @@ header div img{
     }
     #copyright{
         padding-bottom: 1em;
+    }
+}
+
+
+
+@media (min-width:500px) and (max-width:768px){
+    html{
+        font-size: 9px;
+    }
+    
+    /* ################################ NAV CSS ################################ */
+    #chibby, nav ul{
+        /* float: none; */
+        display: block;
+        margin: auto;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.8em 1em;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    /* ################################ Header div CSS ################################ */
+    header div{
+        text-align: center;
+        margin-top: 25rem;
+    }
+    
+    div.travel{
+        font-size: 1.5rem;
+        margin: 1em auto 0.2em auto;
+        width: 40rem;
+    }
+
+    div.travel p{
+        margin: 0 1em;
+    }
+
+    /* ################################  Places CSS ################################  */
+    #content{
+        padding: 4rem 3rem;
+    }
+
+    .place_1,.place_2, .place_3{
+        height: auto;
+    }
+
+    .place_1 #maldives, .place_2 #keral, .place_3 #shimla, .place_1 #maldiv, .place_2 #kerala, .place_3 #shiml{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    #maldiv, #keral, #shiml{
+        padding: 1.5rem 2rem;
+    }
+
+    #maldiv p, #keral p, #shiml p{
+        margin-top: 0rem;
+    }
+
+    /* ################################  Adventure CSS ################################  */
+    #adv{
+        font-size: 1.3rem;
+        padding: 5rem 5rem;
+    }
+
+    #adv h1{
+        font-weight: bolder;
+        font-size: x-large;
+        color: white;
+        margin-bottom: 0.3rem;
+    }
+
+    .adventure{
+        height: auto;
+        margin-top: 1em;
+    }
+
+    .adventure img{
+        height: 30rem;
+    }
+
+    #adv_1, #adv_2, #adv_3, #adv_4{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    /* ################################  Footer CSS ################################  */
+    #footer{
+        height: auto;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+    }
+    #copyright{
+        padding-bottom: 1em;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1200px){
+    html{
+        font-size: 10px;
+    }
+    
+    /* ################################ NAV CSS ################################ */
+    #chibby, nav ul{
+        /* float: none; */
+        display: block;
+        margin: auto;
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0.8em 1em;
+        font-size: medium;
+        font-weight: 700;
+    }
+
+    /* ################################ Header div CSS ################################ */
+    header div{
+        text-align: center;
+        margin-top: 25rem;
+    }
+    
+    div.travel{
+        font-size: 1.5rem;
+        margin: 1em auto 0.2em auto;
+        width: 40rem;
+    }
+
+    div.travel p{
+        margin: 0 1em;
+    }
+
+    /* ################################  Places CSS ################################  */
+    #content{
+        padding: 4rem 3rem;
+    }
+
+    .place_1,.place_2, .place_3{
+        height: auto;
+    }
+
+    .place_1 #maldives, .place_2 #keral, .place_3 #shimla, .place_1 #maldiv, .place_2 #kerala, .place_3 #shiml{
+        float: none;
+        display: block;
+        width: 100%;
+    }
+
+    #maldiv, #keral, #shiml{
+        padding: 1.5rem 2rem;
+    }
+
+    #maldiv p, #keral p, #shiml p{
+        margin-top: 0rem;
+    }
+
+    /* ################################  Adventure CSS ################################  */
+    #adv{
+        font-size: 1.3rem;
+        padding: 5rem 5rem;
+    }
+
+    #adv h1{
+        font-weight: bolder;
+        font-size: x-large;
+        color: white;
+        margin-bottom: 0.3rem;
+    }
+
+    .adventure{
+        height: auto;
+        margin-top: 1em;
+    }
+
+    .adventure img{
+        height: 30rem;
+    }
+
+    #adv_1, #adv_2, #adv_3, #adv_4{
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+
+    /* ################################  Footer CSS ################################  */
+    #footer{
+        height: auto;
+        padding-top: 1rem;
+        font-size: 1.6rem;
+    }
+    #copyright{
+        padding-bottom: 1em;
+    }
+}
+
+@media(orientation = landscape) and (max-height: 500px){
+    #header{
+        height: 90vmax;
     }
 }
