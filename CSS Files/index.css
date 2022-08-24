@@ -220,7 +220,7 @@ header div img{
 #maldives:hover #more_details, #kerala:hover #more_details, #shimla:hover #more_details{
     opacity: 1;
     left: 50%;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
 }
 
 #maldives::after, #kerala::after, #shimla::after{
@@ -260,10 +260,9 @@ header div img{
     font-family: 'Josefin Sans', sans-serif;
 }
 
-
 .btn_2{
     margin-top: 1.2rem;
-    background-color: rgb(39, 135, 88);
+    background: rgb(39, 135, 88);
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: large;
@@ -275,7 +274,7 @@ header div img{
 }
 
 .btn_2:hover{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );
     font-size: x-large;
     color: rgb(255, 255, 255);
 }
@@ -326,7 +325,7 @@ header div img{
     width: 100%;
     height: 20rem;
     border-radius: 2rem;
-    transition: transform 500ms ease-in-out;
+    transition: transform 250ms ease-in-out;
 }
 
 .adventure img:hover{
