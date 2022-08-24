@@ -29,8 +29,11 @@ header {
 
 /* ################################ NAV CSS ################################ */
 #nav{
+    position: sticky;
+    top: 0px;
     padding-top: 1.5rem;
 }
+
 #chibby{
     width: 20rem;
     height: 5rem;
@@ -59,11 +62,12 @@ nav ul li{
     font-size: large;
     font-weight: 700;
     padding: 0.3rem;
+    transition: transform 250ms ease-in;
 }
 
-/* nav li:hover{
-    border-bottom: 0.15rem solid rgb(0, 0, 0);
-} */
+nav li:hover{
+    transform: scale(1.3);
+}
 
 nav a{
     font-family: 'Josefin Sans', sans-serif;
@@ -122,14 +126,18 @@ div.travel p{
     padding: 1rem;
     border: none;
     border-radius: 1rem;
+    margin-top: 0.1rem;
     width: 20rem;
     height: 4.5rem;
+    /* transition: transform 500ms ease-in-out; */
+    transition: all 300ms ease-in;
 }
 
 .btn_1:hover{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(128,248,174,1) 0%, rgba(223,244,148,1) 90% );
     color: rgb(0, 0, 0);
     font-size: large;
+    transform: scale(1.2);
 }
 
 header div img{
@@ -172,9 +180,66 @@ header div img{
     height: 100%;
 }
 
-#maldives, #kerala, #shimla{
+#maldives img, #kerala img, #shimla img{
+    width: 100%;
+    height: 100%;
     border-radius: 1.8rem;
 }
+
+#maldives, #kerala, #shimla{
+    position: relative;
+}
+
+#more_details{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-size: 1.5rem; */
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    letter-spacing: 0.1rem;
+    opacity: 0;
+    transition: all 250ms ease-in;
+}
+
+#kerala #more_details{
+    color: white;
+    position: absolute;
+    font-size: 0.5rem;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    letter-spacing: 0.1rem;
+    opacity: 0;
+    transition: all 250ms ease-in;
+}
+
+#maldives:hover #more_details, #kerala:hover #more_details, #shimla:hover #more_details{
+    opacity: 1;
+    left: 50%;
+    font-size: 1.5rem;
+}
+
+#maldives::after, #kerala::after, #shimla::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 1.8rem;
+    z-index: 1;
+    opacity: 0;
+}
+
+#maldives:hover::after, #shimla:hover::after, #kerala:hover::after {
+    opacity: 1;
+}
+
 
 #maldiv, #keral, #shiml{
     background-image: linear-gradient( 180.5deg,  rgba(46,255,171,1) 12.3%, rgba(252,251,222,0.46) 92% );
@@ -206,6 +271,7 @@ header div img{
     border-radius: 1rem;
     width: 25rem;
     height: 4rem;
+    transition: all 250ms ease-in;
 }
 
 .btn_2:hover{
@@ -250,7 +316,6 @@ header div img{
     text-align: center;
     float: left;
     width: 25%;
-    /* height: 100%; */
 }
 
 #adv_1 h2, #adv_2 h2, #adv_3 h2, #adv_4 h2{
@@ -260,9 +325,14 @@ header div img{
 .adventure img{
     width: 100%;
     height: 20rem;
-    /* height: 100%; */
     border-radius: 2rem;
+    transition: transform 500ms ease-in-out;
 }
+
+.adventure img:hover{
+    transform: scale(1.1);
+}
+
 
 #guide{
     margin-top: 0.625em;
